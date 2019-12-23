@@ -5,7 +5,7 @@ export default function typeChecking(argument) {
     if (Number.isInteger(argument)) {
       return argument;
     }
-    throw new Error('Полученные данные не являются числом');
+    throw new Error('Полученные данные не являются числом в десятичной форме');
   } catch (e) {
     return (e);
   }
